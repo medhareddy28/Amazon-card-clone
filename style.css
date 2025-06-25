@@ -1,36 +1,78 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
+  background-color: #f3f3f3;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  margin: 0;
 }
 
 .card {
-  background-color: white;
-  border: 1px solid #ccc;
-  width: 300px;
-  padding: 20px;
-  text-align: center;
+  background-color: #fff;
+  width: 250px;
+  border: 1px solid #ddd;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.03);
 }
 
 .card img {
   width: 100%;
   height: auto;
-  border-radius: 4px;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-body h2 {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.brand {
+  color: #555;
+  font-size: 14px;
 }
 
 .price {
-  color: green;
-  font-size: 1.2em;
+  color: #B12704;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.original {
+  color: #767676;
+  font-size: 14px;
+  text-decoration: line-through;
+  margin-left: 8px;
+}
+
+.rating {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 12px;
 }
 
 button {
-  background-color: #f0c14b;
-  border: 1px solid #a88734;
-  padding: 10px 20px;
+  width: 100%;
+  padding: 10px;
+  background-color: #FFD814;
+  border: 1px solid #FCD200;
+  font-size: 14px;
+  border-radius: 5px;
   cursor: pointer;
+  font-weight: bold;
 }
+
+button:hover {
+  background-color: #F7CA00;
+}
+
